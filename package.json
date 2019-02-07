@@ -1,0 +1,45 @@
+{
+  "name": "18next-parser-reproduce",
+  "version": "0.0.1",
+  "description": "18next-parser-reproduce",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --host 0.0.0.0",
+    "build": "npm install && webpack --mode production --display-error-details",
+    "i18next": "i18next ./src/components/**/*.js -oc -c ./i18next-parser.config.js"
+  },
+  "author": "Akiyamka",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "i18next-parser": "^1.0.0-beta34",
+    "acorn-jsx": "^5.0.1",
+    "acorn-stage3": "^1.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "file-loader": "^2.0.0",
+    "fs-extra": "^7.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.2.3",
+    "i18next": "^14.0.1",
+    "i18next-browser-languagedetector": "^2.2.4",
+    "i18next-xhr-backend": "^1.5.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-i18next": "^9.0.10"
+  }
+}

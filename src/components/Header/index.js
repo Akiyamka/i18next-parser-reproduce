@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
       <h1>
         <NamespacesConsumer>
-          { t => t(this.state.title) }
+          { t => t('This is header with key') }
         </NamespacesConsumer>
       </h1>
 

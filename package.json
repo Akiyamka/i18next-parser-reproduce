@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --host 0.0.0.0",
     "build": "npm install && webpack --mode production --display-error-details",
-    "i18next": "i18next ./src/components/**/*.js -oc -c ./i18next-parser.config.js"
+    "i18next": "i18next --config ./i18next-parser.config.js ./src/components/**/*.js "
   },
   "author": "Akiyamka",
   "license": "ISC",
@@ -35,6 +35,7 @@
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/polyfill": "^7.2.3",
+    "acorn": "^6.0.7",
     "i18next": "^14.0.1",
     "i18next-browser-languagedetector": "^2.2.4",
     "i18next-xhr-backend": "^1.5.1",
